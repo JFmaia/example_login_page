@@ -11,7 +11,6 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
-  final bool _isVisible = false;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
