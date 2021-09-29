@@ -5,41 +5,42 @@ class Logo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Stack(
-      children: [
-        Container(
-          height: 170,
-          width: 170,
-          decoration: BoxDecoration(
-            color: Colors.black12,
-            borderRadius: BorderRadius.circular(90),
-          ),
+    final media = MediaQuery.of(context).size;
+    return Container(
+      height: media.height * 0.40,
+      width: double.infinity,
+      decoration: const BoxDecoration(
+        image: DecorationImage(
+          image: AssetImage('assets/lovemaryhuana.jpg'),
+          fit: BoxFit.fill,
         ),
-        Positioned(
-          right: 2,
-          bottom: 2,
-          child: Container(
-            height: 150,
-            width: 150,
+      ),
+      child: Stack(
+        children: [
+          Container(
+            height: media.height * 0.40,
+            width: double.infinity,
             decoration: BoxDecoration(
-              color: Colors.black26,
-              borderRadius: BorderRadius.circular(80),
+              color: Colors.blueGrey.withOpacity(0.6),
             ),
           ),
-        ),
-        Positioned(
-          right: 10,
-          bottom: 10,
-          child: Container(
-            height: 100,
-            width: 100,
-            decoration: BoxDecoration(
-              color: Colors.black38,
-              borderRadius: BorderRadius.circular(50),
+          Positioned(
+            bottom: 50,
+            right: 115,
+            child: Container(
+              margin: const EdgeInsets.only(top: 50),
+              child: const Text(
+                "My Weed",
+                style: TextStyle(
+                  fontSize: 30,
+                  fontWeight: FontWeight.w400,
+                  color: Colors.white,
+                ),
+              ),
             ),
           ),
-        ),
-      ],
+        ],
+      ),
     );
   }
 }
