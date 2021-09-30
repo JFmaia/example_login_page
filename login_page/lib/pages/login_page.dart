@@ -83,9 +83,7 @@ class _LoginPageState extends State<LoginPage> {
                         onPressed: () {},
                       ),
                     ),
-                    const SizedBox(
-                      height: 16,
-                    ),
+                    const SizedBox(height: 5),
                     GestureDetector(
                       onTap: () {},
                       child: Container(
@@ -110,16 +108,18 @@ class _LoginPageState extends State<LoginPage> {
                         ),
                       ),
                     ),
-                    const SizedBox(height: 10),
+                    const SizedBox(height: 15),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         MaterialButton(
+                          height: 45,
+                          minWidth: 135,
                           color: Colors.blueGrey,
                           onPressed: () {},
                           child: Container(
-                            height: 30,
-                            width: 30,
+                            height: 28,
+                            width: 28,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(20),
                               color: Colors.blueGrey,
@@ -130,12 +130,15 @@ class _LoginPageState extends State<LoginPage> {
                             ),
                           ),
                         ),
+                        const SizedBox(height: 20),
                         MaterialButton(
+                          height: 45,
+                          minWidth: 135,
                           color: Colors.blueGrey,
                           onPressed: () {},
                           child: Container(
-                            height: 30,
-                            width: 30,
+                            height: 28,
+                            width: 28,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(20),
                               image: const DecorationImage(
@@ -147,7 +150,7 @@ class _LoginPageState extends State<LoginPage> {
                         ),
                       ],
                     ),
-                    const SizedBox(height: 10),
+                    const SizedBox(height: 2),
                     Center(
                       child: TextButton(
                         child: const Text(
