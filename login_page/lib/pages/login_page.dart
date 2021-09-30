@@ -115,12 +115,14 @@ class _LoginPageState extends State<LoginPage> {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         MaterialButton(
+                          color: Colors.blueGrey,
                           onPressed: () {},
                           child: Container(
                             height: 30,
                             width: 30,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(20),
+                              color: Colors.blueGrey,
                               image: const DecorationImage(
                                 image: AssetImage("assets/facebook.png"),
                                 fit: BoxFit.cover,
@@ -129,6 +131,7 @@ class _LoginPageState extends State<LoginPage> {
                           ),
                         ),
                         MaterialButton(
+                          color: Colors.blueGrey,
                           onPressed: () {},
                           child: Container(
                             height: 30,
